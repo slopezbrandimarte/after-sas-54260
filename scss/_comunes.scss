@@ -1,0 +1,59 @@
+/*estilos comunes para todas las secciones*/
+body{
+    font-family: $fuente-principal;
+    background-color: $color-primario;
+    color: $color-secundario;
+}
+
+.nav-link, .nav-link.active,.navbar-nav .nav-link.active{
+    color: $color-secundario;
+
+    &:hover {
+        color: $color-terciario;
+    }
+}
+
+.navbar-toggler{
+    background-color: $color-terciario;
+}
+
+.carousel-item img{
+    height: 250px;
+
+}
+
+@media (min-width:$tablet){
+    .carousel-item img{
+        height: 60vh;
+    }
+}
+
+@media (min-width:$desktop){
+    .carousel-item img{
+        height: 80vh;
+    }
+}
+
+h1, h2, h3{
+    text-align: center;
+    margin-top: $espacio-medio;
+}
+
+p{
+    font-size: $fuente-media;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: $espacio-grande;
+
+    /*anidacion*/
+    .container-redes a{
+        color: $color-terciario;
+        text-decoration: none;
+        font-size: 40px;
+    }
+}
+

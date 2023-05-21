@@ -1,0 +1,133 @@
+/*paleta de colores*/
+/*fuentes*/
+/*RESOLUCION DE PANTALLA*/
+/*separaciones (margenes y paddings)*/
+.contenedor-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .contenedor-banner {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
+.banner-uno, .banner-dos, .banner-tres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner-uno iconify-icon, .banner-dos iconify-icon, .banner-tres iconify-icon {
+  font-size: 60px;
+}
+
+.main-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .main-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+form .campos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.botones-form {
+  border: solid 1px #b2b2b2;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: yellow;
+  font-weight: bold;
+}
+.botones-form:hover {
+  background-color: #000;
+  color: yellow;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+textarea {
+  height: 150px;
+  width: 200px;
+}
+
+/*estilos comunes para todas las secciones*/
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #000;
+  color: #b2b2b2;
+}
+
+.nav-link, .nav-link.active, .navbar-nav .nav-link.active {
+  color: #b2b2b2;
+}
+.nav-link:hover, .nav-link.active:hover, .navbar-nav .nav-link.active:hover {
+  color: yellow;
+}
+
+.navbar-toggler {
+  background-color: yellow;
+}
+
+.carousel-item img {
+  height: 250px;
+}
+
+@media (min-width: 768px) {
+  .carousel-item img {
+    height: 60vh;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-item img {
+    height: 80vh;
+  }
+}
+h1, h2, h3 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  /*anidacion*/
+}
+footer .container-redes a {
+  color: yellow;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+/*# sourceMappingURL=styles.css.map */
